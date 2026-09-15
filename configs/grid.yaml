@@ -1,0 +1,29 @@
+seed: 7
+device: cuda
+output_dir: outputs/grid/split1/full
+data:
+  manifest: data/grid/split1/features.jsonl
+  tokenizer: word
+  horizontal_flip: true
+model:
+  feature_dim: 768
+  d_model: 512
+  nhead: 8
+  num_encoder_layers: 3
+  num_decoder_layers: 3
+  dim_feedforward: 2048
+  dropout: 0.3
+train:
+  warmup_epochs: 5
+  epochs: 25
+  batch_size: 32
+  warmup_lr: 0.001
+  outer_lr: 0.0005
+meta:
+  inner_steps: 10
+  inner_lr: 0.001
+  inner_optimizer: adam
+  contrastive_weight: 0.005
+  temperature: 0.2
+decode:
+  max_length: 64

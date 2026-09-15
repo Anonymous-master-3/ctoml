@@ -1,0 +1,4 @@
+extends: ../grid.yaml
+output_dir: outputs/grid/split1/local_only
+meta:
+  use_global: false

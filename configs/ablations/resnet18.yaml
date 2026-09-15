@@ -1,0 +1,6 @@
+extends: ../chicagofswild.yaml
+output_dir: outputs/chicagofswild/resnet18/full
+data:
+  manifest: data/chicagofswild/resnet18/features.jsonl
+model:
+  feature_dim: 512

@@ -1,0 +1,14 @@
+extends: grid.yaml
+output_dir: outputs/chicagofswild/resnet50/full
+data:
+  manifest: data/chicagofswild/resnet50/features.jsonl
+  tokenizer: character
+  horizontal_flip: false
+model:
+  feature_dim: 2048
+  dropout: 0.2
+train:
+  warmup_lr: 0.0005
+meta:
+  inner_lr: 0.0005
+  temperature: 0.2

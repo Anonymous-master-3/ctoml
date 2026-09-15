@@ -1,0 +1,4 @@
+extends: ../grid.yaml
+output_dir: outputs/grid/split1/no_meta
+train:
+  mode: no_meta

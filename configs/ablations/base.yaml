@@ -1,0 +1,10 @@
+extends: ../grid.yaml
+output_dir: outputs/grid/split1/base
+train:
+  mode: base
+  warmup_epochs: 0
+  epochs: 30
+meta:
+  use_taw: false
+  use_global: false
+  use_local: false
